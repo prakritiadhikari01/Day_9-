@@ -2,12 +2,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .models import Student,Department
 from .serializers import StudentSerializer,DepartmentSerializer
-
-from rest_framework.response import Response
-from rest_framework.decorators import api_view
 from rest_framework import status
-from .models import Student
-from .serializers import StudentSerializer
 
 @api_view(['GET', 'POST', 'PUT', 'PATCH', 'DELETE'])
 def student_api(request, pk=None):
